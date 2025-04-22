@@ -1,0 +1,41 @@
+.plans {
+    padding: 5.6vw;
+
+    h2 { 
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+
+        &__item { 
+            text-align: center;
+            padding: 60px 44px 44px;
+            max-width: 380px;
+            width: 100%;
+
+            &:nth-child(2){ // aqui da pra selecionar qual item vamos selecionar
+            // por ex eu quero o 2 item da class plans__list__item apenas
+            // utilizo nth-child() especifico o numero 2 dentro das aspas e ele só vai modificar o 2º item
+                background-image: url(/src/images/fundo_combo_plus.png);
+                background-repeat: no-repeat; //pra nao repetir o fundo e nao bugar o rolê
+                background-size: contain;
+        }
+
+            img { 
+                height: 83px;
+            }
+
+            strong { 
+                display: block;
+                margin-top: 24px;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+}
